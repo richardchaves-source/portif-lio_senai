@@ -1,0 +1,31 @@
+/*classe da barra de inicio*/
+ .BarraDeInicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 16px; background: #c94848;color: #fff;
+}
+.menu{display: flex; gap: 40px;}
+
+.menu a{color: #fff; text-decoration: none}
+
+.texto{
+    margin: 0 auto;
+
+}
+
+.cards{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    }
+
+.card{
+    flex: 1 1 240px;
+background: #fff;
+border: 2px solid #e5e5e5;
+border-radius: 10px;
+padding: 16px;
+box-shadow:  0 2px 5px rgba(0,0,0,0.05);
+}
+
