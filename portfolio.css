@@ -8,24 +8,37 @@
 .menu{display: flex; gap: 40px;}
 
 .menu a{color: #fff; text-decoration: none}
-
+.menu a:hover{ color:#488dc9;}
 .texto{
-    margin: 0 auto;
-
+  text-align: center;
 }
 
+.BarraDoMeio {
+    text-align: center;
+}
 .cards{
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+    color: #488dc9;
+    font-family: sans-serif;
+    font-size: 10xp;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+.cards{ 
+    background:rgba(40, 93, 177, 0.664);
+    padding: 10xp;
+    transition:background-color .2 esse;
+}
+    .card {
+        flex:  1 1 270px;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        text-align: center;
     }
 
-.card{
-    flex: 1 1 240px;
-background: #fff;
-border: 2px solid #e5e5e5;
-border-radius: 10px;
-padding: 16px;
-box-shadow:  0 2px 5px rgba(0,0,0,0.05);
-}
-
+    .card:hover:hover{color: #488dc9;}
+    .card{color: #f15454}
