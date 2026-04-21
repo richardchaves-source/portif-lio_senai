@@ -3,19 +3,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 16px; background: #c94848;color: #fff;
+
+    padding: 30px 16px; background: #488dc9;color: #fff;
 }
+/*classe menu*/
 .menu{display: flex; gap: 40px;}
 
 .menu a{color: #fff; text-decoration: none}
-.menu a:hover{ color:#488dc9;}
+.menu a:hover{ color:#15436b;}
+
+/*classe do texto*/
 .texto{
   text-align: center;
 }
-
+/*classe da barra do meio*/
 .BarraDoMeio {
     text-align: center;
 }
+/*classe dos cards*/
 .cards{
     color: #488dc9;
     font-family: sans-serif;
@@ -28,7 +33,7 @@
 .cards{ 
     background:rgba(40, 93, 177, 0.664);
     padding: 10xp;
-    transition:background-color .2 esse;
+    transition:background-color .2 ease;
 }
     .card {
         flex:  1 1 270px;
@@ -39,6 +44,25 @@
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         text-align: center;
     }
-
     .card:hover:hover{color: #488dc9;}
-    .card{color: #f15454}
+     .card{color: #15436b;}
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+     }
+     @media (min-width: 600px){
+      .cards{grid-template-columns: 1fr 1fr 1fr;}
+     }
+
+     .circulo,
+     .pasta,
+     .mensagen{
+        font-size: 30px;
+     }
+
+     .menu a, 
+     .menu .icone-nav{
+        display: none;
+     }
